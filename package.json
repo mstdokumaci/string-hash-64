@@ -1,6 +1,6 @@
 {
   "name": "string-hash-64",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./index",
   "scripts": {
     "test": "node test | tap-difflet && standard"
