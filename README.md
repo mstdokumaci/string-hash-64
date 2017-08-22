@@ -6,6 +6,6 @@
 
 An improved version of djb2. Generates 64 bit integer hashes. Returns a number between 0 and 18446744073709552000.
 
-Repository includes test for hashing 60 million strings with zero collisions. That's 350k+ less than what you get with djb2.
+Repository includes test for hashing 65 million strings with zero collisions. That's 400k+ less than what you get with djb2.
 
 Performs as fast as djb2, only the generated hashes will consume almost twice memory in size.
