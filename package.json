@@ -2,6 +2,7 @@
   "name": "string-hash-64",
   "version": "1.0.3",
   "main": "./index",
+  "typings": "./types.d.ts",
   "scripts": {
     "test": "node test | tap-difflet && standard"
   },
