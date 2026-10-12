@@ -1,17 +1,24 @@
 {
   "name": "string-hash-64",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "main": "./index",
   "typings": "./types.d.ts",
+  "files": [
+    "index.js",
+    "types.d.ts"
+  ],
   "scripts": {
-    "test": "node test | tap-difflet && standard"
+    "test": "standard && node --test test.js",
+    "test:collisions": "node scripts/collisions.js"
   },
-  "description": "fast 64 bit string hashing function",
+  "description": "fast djb2-style string hashing returning a 53-bit safe integer",
   "license": "MIT",
   "keywords": [
     "string",
     "hashing",
-    "64 bit"
+    "hash",
+    "djb2",
+    "53-bit"
   ],
   "author": {
     "name": "Mustafa Dokumacı",
@@ -21,10 +28,11 @@
     "type": "git",
     "url": "git://github.com/mstdokumaci/string-hash-64.git"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {},
   "devDependencies": {
-    "tape": "*",
-    "tap-difflet": "*",
-    "standard": "*"
+    "standard": "^17.1.2"
   }
 }
