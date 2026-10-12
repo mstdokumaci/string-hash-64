@@ -14,7 +14,7 @@ hash('hello') // 6000404498017767
 
 ## Collisions, measured against djb2
 
-**Zero collisions among the first 300 million sequential integers** (`"0"` … `"299999999"`) — djb2 already has 12.6 million duplicate entries in that same batch.
+**Zero collisions among the first 300 million sequential integers**, djb2 already has 12.6 million duplicate entries in that same batch.
 
 Run `npm run test:collisions` to reproduce (it grows sequential batches until the first collision; needs ~4GB of RAM and a few minutes).
 
@@ -43,8 +43,8 @@ Hash values differ from 1.x. Rehash anything you persisted. The API is unchanged
 
 ## Development
 
-- `npm test` — linter + unit tests
-- `npm run test:collisions` — the full comparison against djb2 above
+- `npm test`: linter + unit tests
+- `npm run test:collisions`: the full comparison against djb2 above
 
 ## License
 
